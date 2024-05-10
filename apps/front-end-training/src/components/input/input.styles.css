@@ -1,0 +1,55 @@
+.form-field {
+  display: flex;
+  margin-bottom: var(--size3);
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: var(--fontSize4);
+  font-weight: var(--bold);
+  line-height: var(--lineHeight6);
+  color: var(--textHigh);
+}
+
+.form-message {
+  font-size: var(--fontSize4);
+  color: var(--dangerBorder);
+  opacity: var(--opacity80);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--size1);
+  font-size: var(--fontSize4);
+  color: var(--textHigh);
+  background-color: var(--subtleBg);
+  box-shadow: 0 0 0 1px var(--uiElementBorder);
+}
+.input:hover,
+.textarea:hover {
+  box-shadow: 0 0 0 1px var(--uiElementBorderHover);
+}
+.input:focus,
+.textarea:focus {
+  box-shadow: 0 0 0 2px var(--uiElementBorderHover);
+}
+.input::selection,
+.textarea::selection {
+  background-color: var(--uiElementBgActive);
+  color: var(--textHigh);
+}
+
+.input {
+  padding: 0 var(--size3);
+  height: var(--size9);
+  line-height: var(--lineHeight1);
+}
+
+.textarea {
+  resize: none;
+  padding: var(--size3);
+}

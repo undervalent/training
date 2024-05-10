@@ -1,7 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.css';
-
-
+import {SignUp} from '../components/form'
 export function App() {
   return (
     <>
@@ -9,7 +8,7 @@ export function App() {
         <h1>Submission form</h1>
       </header>
       <section>
-        This is the form
+      <SignUp />
       </section>
       </>
   );
